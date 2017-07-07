@@ -1,19 +1,20 @@
 @blue: #3190e8;
 @bc: #e4e4e4;
-@fc:#fff;
-@fellow:#ffcd32;
-
+@fc: #fff;
+@fellow: #ffcd32;
 // 背景图片地址和大小
 .bis(@url) {
-	background-image: url(@url);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+    background-image: url(@url);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
+
 //字体大小，颜色
-.fontSize(@size, @color){
-	font-size:@size;
-	color: @color;
+.fontSize(@size, @color) {
+    font-size: @size;
+    color: @color;
 }
+
 .borderRadius(@radius) {
     -webkit-border-radius: @radius;
     -moz-border-radius: @radius;
@@ -24,28 +25,34 @@
 
 //定位上下左右居中
 .center {
-	position: absolute;
-	top: 50%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 //定位上下居中
 .ct {
-	position: absolute;
-	top: 50%;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
 }
 
 //定位上下居中
 .cl {
-	position: absolute;
-	left: 50%;
+    position: absolute;
+    left: 50%;
     transform: translateX(-50%);
 }
 
 //宽高
-.wh(@width, @height){
-	width: @width;
-	height: @height;
+.wh(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+.nowrap {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
