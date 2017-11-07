@@ -112,7 +112,6 @@ export default {
             this.$refs.cdWrapper.style.animation = ''
         },
         leave(el, done) {
-            console.log('aaaaaaaaaaa')
             this.$refs.cdWrapper.style.transition = 'all 0.4s'
             const { x, y, scale } = this._getPosAndScale()
             this.$refs.cdWrapper.style[transform] = `translate3d(${x}px,${y}px,0) scale(${scale})`
